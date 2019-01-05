@@ -12,6 +12,10 @@ $this->title = 'Aditya\'s Blog';
         <h1 style="color:#337ab7">Aditya's Blog</h1>
     </div>
 
+    <div class="row">
+        <span><?= Html::a('Create', ['/site/create'], ['class' => 'btn btn-primary']) ?></span>
+    </div>
+
     <div class="body-content">
         <div class="row">
             <table class="table table-hover">
