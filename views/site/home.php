@@ -8,7 +8,10 @@ $this->title = 'Aditya\'s Blog';
 ?>
 <div class="site-index">
     <?php if(Yii::$app->session->hasFlash('message')): ?>
-        <?= Yii::$app->session->getFlash('message'); ?>
+        <div class="alert alert-dismissible alert-secondary">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <?= Yii::$app->session->getFlash('message'); ?>
+        </div>
     <?php endif; ?>
     <div class="jumbotron">
         <h1 style="color:#337ab7">Aditya's Blog</h1>
