@@ -71,7 +71,9 @@ class SiteController extends Controller
 
     public function actionCreate(){
         $post = new Posts();
-        return $this->render('create');
+        return $this->render('create', [
+            'post' => $post
+        ]);
     }
 
     /**
