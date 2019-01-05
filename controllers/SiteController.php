@@ -95,7 +95,7 @@ class SiteController extends Controller
 
     public function actionUpdate($id){
         $post = Posts::findOne($id);
-        if($post->load(Yii::$app->request()->post()) && $post->save()){
+        if($post->load(Yii::$app->request->post()) && $post->save()){
             Yii::$app->setSession->setFlash('message', 'Post updated successfully');
             return $this->redirect(['index', 'id' => $post->id]);
         }
