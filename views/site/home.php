@@ -40,8 +40,9 @@ $this->title = 'Aditya\'s Blog';
                                 <td><?= $post->category; ?></td>
                                 <td>
                                     <span><?= Html::a('View', ['view', 'id' => $post->id], ['class'=>'label label-primary']) ?></span>
-                                    <span><?= Html::a('Update') ?></span>
-                                    <span><?= Html::a('Delete') ?></span>
+                                    <span><?= Html::a('Update', ['update', 'id' => $post->id], ['class'=>'label label-success']) ?></span>
+                                    <span><?= Html::a('Delete', ['delete', 'id' => $post->id], ['class'=>'label label-danger']) ?></span>
+
                                 </td>
                             </tr>
                         <?php endforeach; ?>
