@@ -39,7 +39,7 @@ $this->title = 'Aditya\'s Blog';
                                 <td><?= $post->description; ?></td>
                                 <td><?= $post->category; ?></td>
                                 <td>
-                                    <span><?= Html::a('View') ?></span>
+                                    <span><?= Html::a('View', ['view', 'id' => $post->id], ['class'=>'label label-primary']) ?></span>
                                     <span><?= Html::a('Update') ?></span>
                                     <span><?= Html::a('Delete') ?></span>
                                 </td>
