@@ -64,11 +64,9 @@ class SiteController extends Controller
     {
         $posts = Posts::find()
                 ->all();
-        echo '<pre>';
-        print_r($posts);
-        echo '</pre>';
-        exit();
-        return $this->render('home');
+        return $this->render('home', [
+            'posts' => $posts
+        ]);
     }
 
     /**

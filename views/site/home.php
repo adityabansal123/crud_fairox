@@ -13,7 +13,7 @@ $this->title = 'Aditya\'s Blog';
     </div>
 
     <div class="body-content">
-
+        <?php print_r($posts); ?>
         <div class="row">
             <table class="table table-hover">
                 <thead>
