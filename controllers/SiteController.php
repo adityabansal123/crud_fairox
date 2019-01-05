@@ -69,6 +69,13 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionCreate(){
+        $post = new Posts();
+        return $this->render('home', [
+            'post' => $post
+        ]);
+    }
+
     /**
      * Login action.
      *

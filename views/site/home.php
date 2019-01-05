@@ -13,7 +13,7 @@ $this->title = 'Aditya\'s Blog';
     </div>
 
     <div class="row">
-        <span><?= Html::a('Create', ['/site/create'], ['class' => 'btn btn-primary']) ?></span>
+        <span style="margin-bottom: 20px;"><?= Html::a('Create', ['/site/create'], ['class' => 'btn btn-primary']) ?></span>
     </div>
 
     <div class="body-content">
