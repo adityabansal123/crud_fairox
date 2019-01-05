@@ -29,25 +29,25 @@ $this->title = 'Aditya\'s Blog';
                 </tr>
                 </thead>
                 <tbody>
-                <?php if(count($posts) > 0): ?>
-                <?php foreach($posts as $post): ?>
-                <tr class="table-active">
-                    <th scope="row"><?= $post->id; ?></th>
-                    <td><?= $post->title; ?></td>
-                    <td><?= $post->description; ?></td>
-                    <td><?= $post->category; ?></td>
-                    <td>
-                        <span><?= Html::a('View') ?></span>
-                        <span><?= Html::a('Update') ?></span>
-                        <span><?= Html::a('Delete') ?></span>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-                <?php else: ?>
-                    <tr>
-                        <td>No Records Found</td>
-                    </tr>
-                <?php endif; ?>
+                    <?php if(count($posts) > 0): ?>
+                        <?php foreach($posts as $post): ?>
+                            <tr class="table-active">
+                                <th scope="row"><?= $post->id; ?></th>
+                                <td><?= $post->title; ?></td>
+                                <td><?= $post->description; ?></td>
+                                <td><?= $post->category; ?></td>
+                                <td>
+                                    <span><?= Html::a('View') ?></span>
+                                    <span><?= Html::a('Update') ?></span>
+                                    <span><?= Html::a('Delete') ?></span>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td>No Records Found</td>
+                        </tr>
+                    <?php endif; ?>
                 </tbody>
             </table>
         </div>
