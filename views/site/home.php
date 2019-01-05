@@ -1,5 +1,7 @@
 <?php
 
+use yii\helpers\html;
+
 /* @var $this yii\web\View */
 
 $this->title = 'Aditya\'s Blog';
@@ -29,6 +31,11 @@ $this->title = 'Aditya\'s Blog';
                     <td>Column content</td>
                     <td>Column content</td>
                     <td>Column content</td>
+                    <td>
+                        <span><?= Html::a('View') ?></span>
+                        <span><?= Html::a('Update') ?></span>
+                        <span><?= Html::a('Delete') ?></span>
+                    </td>
                 </tr>
                 </tbody>
             </table>
