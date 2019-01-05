@@ -31,7 +31,7 @@ $this->title = 'Aditya\'s Blog';
                     <th scope="row"><?= $post->id; ?></th>
                     <td><?= $post->title; ?></td>
                     <td><?= $post->description; ?></td>
-                    <td><?= $post->categroy; ?></td>
+                    <td><?= $post->category; ?></td>
                     <td>
                         <span><?= Html::a('View') ?></span>
                         <span><?= Html::a('Update') ?></span>
