@@ -7,10 +7,7 @@ $this->title = 'Aditya\'s Blog';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Aditya's Blog</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
+        <h1 style="color:#337ab7">Aditya's Blog</h1>
     </div>
 
     <div class="body-content">
