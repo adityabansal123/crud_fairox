@@ -86,6 +86,13 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionView($id){
+        $post = Posts::findOne($id);
+        return $this->render('view', [
+            'post' => $post,
+        ]);
+    }
+
     /**
      * Login action.
      *
@@ -105,13 +112,6 @@ class SiteController extends Controller
         $model->password = '';
         return $this->render('login', [
             'model' => $model,
-        ]);
-    }
-
-    public function actionView($id){
-        $post = Posts::findOne($id);
-        return $this->render('view', [
-            'post' => $post,
         ]);
     }
 

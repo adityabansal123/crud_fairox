@@ -13,15 +13,12 @@ $this->title = 'Aditya\'s Blog';
         <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center">
                     <?= $post->title; ?>
-                <span class="badge badge-primary badge-pill">14</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                     <?= $post->description; ?>
-                <span class="badge badge-primary badge-pill">2</span>
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                     <?= $post->category; ?>
-                <span class="badge badge-primary badge-pill">1</span>
             </li>
         </ul>
         <div class="row">
