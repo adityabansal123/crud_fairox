@@ -104,6 +104,14 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionDelete($id){
+        $post = Posts::findOne($id)->delete();
+        if($post){
+            Yii::$app->getSession()->setFlash('message', 'Post deleted successfully');
+            return $this->redirect(['index']);
+        }
+    }
+
     /**
      * Login action.
      *
