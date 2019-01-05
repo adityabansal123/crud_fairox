@@ -75,10 +75,10 @@ class SiteController extends Controller
         if($post->load($formData)){
             if($post->save()){
                 Yii::$app->getSession()->setFlash('message','Post published successfully');
-                return $this->redirect(['home']);
+                return $this->redirect(['index']);
             }else{
                 Yii::$app->getSession()->setFlash('message','Failed to post');
-                return $this->redirect(['home']);
+                return $this->redirect(['index']);
             }
         }
         return $this->render('create', [
