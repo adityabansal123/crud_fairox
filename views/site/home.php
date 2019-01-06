@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 
-$this->title = 'Aditya\'s Blog';
+$this->title = 'Fairox Services';
 ?>
 <div class="site-index">
     <?php if(Yii::$app->session->hasFlash('message')): ?>
@@ -14,7 +14,7 @@ $this->title = 'Aditya\'s Blog';
         </div>
     <?php endif; ?>
     <div class="jumbotron">
-        <h1 style="color:#337ab7">Aditya's Blog</h1>
+        <h1 style="color:#337ab7">Our Blog</h1>
     </div>
 
     <div class="row">
